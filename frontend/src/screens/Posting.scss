@@ -1,0 +1,226 @@
+@import "../App.scss";
+
+.Posting__nav__left {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+}
+.postingCard {
+  max-width: 32% !important;
+  min-width: 32% !important;
+  background-color: #f8f8f8 !important;
+  border: none !important;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+.postingCardText {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-end !important;
+  justify-content: space-between !important;
+}
+.postingCardImg {
+  width: 100px !important;
+  margin-right: 20px;
+}
+.cardHeading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0b2239;
+}
+.cardSubHeading {
+  font-size: 12px;
+  color: #15878c;
+  font-weight: bold;
+}
+.cardInfo {
+  font-size: 14px;
+  color: #0b2239;
+  font-weight: bold;
+  margin: 0.3em 0em;
+}
+.posting__table {
+  width: 100%;
+}
+.posting__table__row {
+  padding: 1em 0.5em;
+  display: flex;
+  border-radius: 8px;
+}
+.posting__table__row__heading {
+  padding: 1em 0.5em;
+  display: flex;
+  border-radius: 8px;
+}
+.posting__table__row__heading .table__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $dark;
+  text-transform: uppercase;
+  font-size: $normal-font-size;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.row__heading {
+  display: none;
+}
+.posting__table__row .table__data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $dark;
+  text-transform: uppercase;
+  font-size: $normal-font-size;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.data__row {
+  background-color: $light-green;
+  font-size: $normal-font-size - 5px;
+  margin-bottom: 1em;
+  border: 1px solid $light-green !important;
+}
+.table__data {
+  border: 1px solid $primary;
+  border-radius: 30px;
+  flex: 1;
+  text-align: center;
+}
+.table__data:hover {
+  border-color: $dark;
+}
+.status__col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.status {
+  font-size: $normal-font-size;
+  text-transform: uppercase;
+  margin-bottom: 0em !important;
+  color: white !important;
+  padding: 0.5em 1.2em !important;
+  font-size: $normal-font-size !important;
+  user-select: none;
+  border-radius: 8px !important;
+  width: 90px;
+  height: 36px;
+  font-weight: 600 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.status-live {
+  background-color: #09c956;
+}
+.status-closed {
+  background-color: #ff4d4d;
+}
+.status-hold {
+  background-color: #ffae0c;
+}
+.posting__heading {
+  color: $dark;
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1em;
+}
+.posting__heading svg {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+}
+.nav__link__padding {
+  padding: 0em !important;
+}
+.posting__nav__link {
+  background-color: $primary;
+  color: $dark;
+  font-size: $normal-font-size;
+  border: 1px solid $primary;
+  margin-bottom: 1em;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+.posting__nav__link:hover {
+  background-color: $light-green;
+  color: $dark;
+  border-bottom-color: $dark;
+}
+.filter__box {
+  background-color: $primary !important;
+  color: $dark !important;
+  border: 1px solid $primary !important;
+  border-radius: 5px !important;
+}
+.checked__filter {
+  background-color: $light-green !important;
+  color: $dark !important;
+  border-color: $dark !important;
+}
+.data__row__btn {
+  border: 1px solid $dark !important;
+  min-width: 80px !important;
+  border-radius: 5px !important;
+  background-color: $primary !important;
+  font-weight: 600 !important;
+  padding: 0.3em 1.2em !important;
+  color: $dark !important;
+}
+.data__row__btn:hover {
+  background-color: $dark !important;
+  color: $primary !important;
+}
+@media (max-width: 1440px) {
+  .postingCard {
+    max-width: 48% !important;
+    min-width: 48% !important;
+  }
+}
+@media (max-width: 800px) {
+  .postingCard {
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
+  .postingCard {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+  .Posting__nav {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .Posting__nav__left {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .posting__table__row__heading {
+    display: none !important;
+  }
+  .edits {
+    display: flex !important;
+    margin-top: 1.5em;
+  }
+  .row__heading {
+    display: flex;
+    align-items: center;
+    color: $dark;
+    text-transform: uppercase;
+    font-size: $normal-font-size;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+  .table__data__col {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .table__data__row {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}

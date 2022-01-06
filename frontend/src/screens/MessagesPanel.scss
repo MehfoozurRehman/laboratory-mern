@@ -1,0 +1,191 @@
+@import "../App.scss";
+
+.panel__main__messages {
+  display: flex;
+  padding: 1em 0em;
+}
+
+.messages__side__panel {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1em;
+  align-items: center;
+  width: 25%;
+  max-height: 800px;
+  overflow: auto;
+  padding-right: 0.5em;
+  margin-bottom: 2em;
+}
+.messages__side__panel::-webkit-scrollbar {
+  width: 12px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+}
+.messages__side__panel::-webkit-scrollbar-thumb {
+  background-color: #acacac;
+  border-radius: 12px;
+}
+.messages__side__panel::-webkit-scrollbar-track {
+  background-color: $light-green;
+}
+.messenger__search {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid $primary;
+  margin-bottom: 1em;
+  width: 100% !important;
+}
+.messenger__panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.messengers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  width: 100%;
+  padding: 0.5em;
+  cursor: pointer;
+}
+.messengers:hover {
+  background-color: $primary;
+}
+.messenger__info {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.messenger__user__img {
+  margin-right: 0.5em;
+  width: 25px;
+  height: 25px;
+}
+.status__badges {
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.live {
+  background-color: #1bc167;
+}
+.messenger__name {
+  font-size: $normal-font-size;
+  color: $font-color;
+}
+
+.messages__badge {
+  width: 30px;
+  height: 30px;
+  background-color: $font-color;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+  font-size: $normal-font-size;
+}
+
+.massenger__row {
+  overflow: none;
+  overflow-y: auto;
+  height: 100%;
+}
+.message__row::-webkit-scrollbar {
+  width: 12px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+}
+.message__row::-webkit-scrollbar-thumb {
+  background-color: #acacac;
+  border-radius: 12px;
+}
+.message__row::-webkit-scrollbar-track {
+  background-color: $light-green;
+}
+.message__row {
+  background-color: $light-green;
+  border-radius: 8px;
+  padding: 0em 1em !important;
+  max-height: 800px;
+  position: relative;
+}
+.user__contact__row {
+  padding-right: 0.8em;
+}
+.message__loged__in__user__row {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5em 0em;
+}
+.message__loged__in__user {
+  background-color: white;
+  border-radius: 8px;
+  color: $dark;
+  padding: 2em;
+  max-width: 45%;
+  font-size: $normal-font-size;
+}
+.message__other__user__row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5em 0em;
+}
+.message__other__user {
+  background-color: $dark;
+  border-radius: 8px;
+  color: $primary;
+  padding: 2em;
+  max-width: 45%;
+  font-size: $normal-font-size;
+}
+.message__time__stamp {
+  font-size: $normal-font-size;
+  color: $dark;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em 0em;
+}
+.massenger__form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-height: 50px;
+}
+.massenger__input__field {
+  flex-grow: 1;
+  height: 100%;
+  background-color: white !important;
+  border: 1px solid $dark !important;
+  border-radius: 8px;
+  color: $font-color !important;
+  margin: 0.5em;
+}
+.massenger__button {
+  background-color: $dark !important;
+  color: $primary !important;
+  border-radius: 40px !important;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.massenger__button:hover {
+  background-color: darken($dark, 10%) !important;
+}
+.massenger__button svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 900px) {
+  .panel__main__messages {
+    flex-direction: column;
+  }
+  .messages__side__panel {
+    display: none;
+  }
+}

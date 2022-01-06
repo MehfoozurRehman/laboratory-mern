@@ -1,0 +1,52 @@
+@import "../App.scss";
+
+.company__details__content {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1em;
+}
+.company__details__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.company__details__row__attribute {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+.company__details__row__attribute svg {
+  width: 22px;
+  height: 22px;
+}
+.company__details__row__attribute__heading {
+  padding: 0em 1em;
+  color: $font-color;
+  font-size: $normal-font-size + 2;
+}
+.company__details__row__value {
+  color: $font-color;
+  font-size: $normal-font-size + 3;
+  font-weight: 800;
+}
+.company__details__row__input__box {
+  width: 500px;
+}
+@media (max-width: 700px) {
+  .company__details__row {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .company__details__row__attribute {
+    margin-bottom: 1em;
+    width: 100%;
+  }
+  .company__details__row__value {
+    margin-bottom: 1em;
+  }
+  .company__details__row__input__box {
+    width: 100%;
+  }
+}

@@ -1,0 +1,131 @@
+@import "../App.scss";
+
+.user-profile-name {
+  font-size: $heading-font-size;
+  color: $dark;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.user__profile__messanger {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  background-color: $dark !important;
+  color: $primary !important;
+  font-size: $normal-font-size !important;
+  border-radius: 5px;
+}
+.user__profile__messanger svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5em;
+}
+.user__profile__messanger:hover {
+  background-color: darken($dark, 10%) !important;
+}
+.card-box {
+  background-color: $light-green !important;
+  border: 1px solid $light-green !important;
+  border-radius: 8px !important;
+  margin: 0.8em 0em;
+}
+.card-box:hover {
+  border-color: $dark !important;
+}
+.card-list {
+  color: $dark;
+  padding: 0.5em 1em !important;
+}
+.user-profile-heading {
+  font-size: $normal-font-size + 2px;
+  color: $dark;
+  font-weight: 800;
+}
+.card-list-item {
+  font-size: $normal-font-size;
+  color: $dark;
+  padding: 0.5em 1.5em;
+  white-space: nowrap;
+  display: flex !important;
+  align-items: center !important;
+}
+.card-list-item svg {
+  color: $dark !important;
+  width: 22px;
+  height: 22px;
+  margin-right: 1em;
+}
+.card-list-item-border {
+  border-left: 1px solid $dark;
+}
+.user-profile-bullet-point {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: fit-content !important;
+  margin-bottom: 1.5em;
+}
+.user-profile-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+  background-color: $primary;
+  margin: 0.5em 0em;
+}
+.user-profile-line {
+  width: 2px;
+  height: 88px;
+  background-color: $primary;
+}
+.user-profile-time-created {
+  text-decoration: underline;
+  font-size: $normal-font-size;
+  color: $dark;
+  font-weight: 600;
+  margin: 0.5em 0em;
+}
+.user-profile-disignation {
+  font-size: $normal-font-size;
+  color: $font-color;
+  font-weight: 600;
+  margin: 0.5em 0em;
+}
+.user-profile-date {
+  font-size: $normal-font-size;
+  color: $dark;
+  margin: 0.5em 0em;
+}
+.user-profile-content {
+  font-size: $normal-font-size;
+  color: $font-color;
+  max-width: 600px;
+  margin: 0.5em 0em;
+  text-align: justify;
+}
+.placeholderpic {
+  width: 180px;
+  height: 150px;
+}
+.img-col {
+  max-width: fit-content !important;
+  padding: 0em !important;
+  margin-right: 1em !important;
+}
+.col-border-bottom {
+  border-bottom: 1px solid #e4e4e4;
+  max-width: 50% !important;
+  padding: 0.5em 0em;
+  margin: 0.5em 1em;
+}
+.profile-social-link {
+  margin-right: 1em;
+}
+.profile-social-link img {
+  width: 25px;
+}
+.posting__nav__link__active {
+  background-color: $light-green;
+  color: $dark;
+  border-color: $dark;
+}

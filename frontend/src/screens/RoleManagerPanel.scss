@@ -1,0 +1,72 @@
+@import "../App.scss";
+
+.panel__main__role__manager__row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.panel__main__role__manager__cta__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.panel__main__role__manager__info {
+  display: flex;
+}
+.panel__main__role__manager__cta {
+  width: 150px;
+  margin: 0em 0.5em;
+}
+.panel__main__row__entry__cta {
+  width: 80px;
+}
+.panel__main__role__manager__heading__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.panel__main__role__manager__heading {
+  font-size: $heading-font-size;
+  color: $dark;
+  font-weight: 600;
+}
+.panel__main__role__manager__input__row {
+  width: 50%;
+  margin-bottom: 1em;
+}
+
+.panel__main__role__manager__check__box__row {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0em;
+}
+.panel__main__role__manager__select__row {
+  margin: 1em 0em;
+  width: 100%;
+}
+.panel__main__role__manager__check__box {
+  margin: 0.3em 0em;
+}
+.panel__main__role__manager__new__role__cta {
+  margin-top: 1em;
+  width: 300px;
+}
+.panel__main__role__manager__input__rows {
+  display: flex;
+  max-width: 600px;
+}
+@media (max-width: 700px) {
+  .panel__main__role__manager__row {
+    flex-direction: column;
+  }
+  .panel__main__role__manager__info {
+    margin-bottom: 1em;
+  }
+  .panel__main__role__manager__input__rows {
+    max-width: 100%;
+  }
+  .panel__main__role__manager__input__row {
+    width: 100%;
+  }
+}

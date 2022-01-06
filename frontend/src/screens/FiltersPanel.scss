@@ -1,0 +1,93 @@
+@import "../App.scss";
+
+.filter__content {
+  display: flex;
+  flex-direction: column;
+}
+.filter__input__form {
+  margin-bottom: 2em !important;
+}
+
+.filter__input__form__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.filter__input__form__heading {
+  font-size: $heading-font-size - 2;
+  color: $font-color;
+  margin-right: 1em;
+  font-weight: 600;
+}
+
+.filter__input__form__cta {
+  background-color: $font-color !important;
+  color: $primary !important;
+  margin-right: 1em;
+  border-radius: 5px !important;
+  font-size: $normal-font-size !important;
+  padding: 0.3em 1em;
+}
+
+.filter__input__form__cta:hover {
+  background-color: darken($font-color, 10%) !important;
+}
+.filter__input__form__input__box {
+  display: none;
+}
+
+.filter__input__form__input__field {
+  width: 300px;
+  margin-right: 0.5em;
+}
+
+.filter__input__form__input__field__cta {
+  width: 100px;
+}
+
+.filter__input__form__row__entry {
+  padding: 0.3em 1em;
+  border: 1px solid $font-color;
+  border-radius: 5px;
+  margin-right: 1em;
+  color: $font-color;
+  position: relative;
+  font-size: $normal-font-size - 2;
+}
+
+.filter__input__form__row__entry__close {
+  background-color: $primary;
+  color: $dark;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+}
+
+.filter__input__form__row__entry__close svg {
+  width: 7px;
+  height: 7px;
+}
+
+.filter__input__form__row__entry__close:hover {
+  background-color: $font-color;
+  color: $primary;
+  border-color: $font-color;
+}
+
+@media (max-width: 700px) {
+  .filter__input__form__input__field {
+    width: 150px;
+  }
+  .filter__input__form__input__field__cta {
+    width: fit-content;
+  }
+}

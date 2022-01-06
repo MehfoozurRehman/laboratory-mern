@@ -1,0 +1,63 @@
+@import "../App.scss";
+
+.panel__conatainer__empty__row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2em;
+  height: 100%;
+}
+.panel__conatainer__empty__row__half {
+  width: 50%;
+}
+.message__panel__small {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-right: 1em;
+  height: 390px;
+}
+.message__card__col {
+  width: 40%;
+}
+.message__panel__small::-webkit-scrollbar {
+  width: 12px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+.message__panel__small::-webkit-scrollbar-thumb {
+  background-color: #acacac;
+  border-radius: 12px;
+}
+.message__panel__small::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+.message__panel__small__row {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin: 0.5em 0em;
+}
+.message__panel__small__row:hover {
+  background-color: $primary;
+}
+.message__panel__samll__content {
+  display: flex;
+  align-items: center;
+}
+.message__panel__small__row__img {
+  width: 30px;
+  margin-right: 1em;
+}
+
+@media (max-width: 700px) {
+  .panel__conatainer__empty__row {
+    flex-direction: column;
+  }
+  .panel__conatainer__empty__row__half {
+    width: 100%;
+  }
+  .message__card__col {
+    width: 100%;
+  }
+}
