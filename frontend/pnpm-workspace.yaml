@@ -1,0 +1,7 @@
+allowBuilds:
+  '@fortawesome/fontawesome-free': true
+  '@parcel/watcher': true
+  core-js: true
+  core-js-pure: true
+  jss: true
+
