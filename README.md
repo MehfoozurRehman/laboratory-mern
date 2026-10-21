@@ -54,4 +54,3 @@ MongoDB is needed for the backend to connect. The connection string is hardcoded
 - The frontend makes no API calls. Screen data is hardcoded, and the lab-specific features described in the old README (test inventory, report generator, role-based approvals) are not in the code.
 - Several screen names (JobSeekerPanel, FreelancerPanel, PostingDetails, PlansPanel) suggest the UI was adapted from a job-marketplace template. The frontend `package.json` is still named `aida-pro-dashboard`.
 - No tests are written. `firebase.json` points at a `build` folder, but no deployment is documented.
-- The lockfile and `.firebase` cache are committed; the cache folder is not needed for the app.
