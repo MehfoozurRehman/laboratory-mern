@@ -13,8 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 // db config
-const connection_url =
-  "mongodb+srv://admin:admin123@cluster0.a5jx7.mongodb.net/labData?retryWrites=true&w=majority";
+const connection_url = process.env.MONGODB_URI;
 mongoose.connect(
   connection_url,
   {
